@@ -410,6 +410,31 @@
     }
   }
 
+.event-card {
+    flex: 1 1 400px; /* Equal width for all cards */
+    max-width: 350px; /* Prevent cards from getting too large */
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+  .event-card {
+    max-width: 270px; /* Shrinks slightly for very small devices */
+  }
+}
+        @media (min-width: 320px) and (max-width: 720px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+
+  }
+}
+@media (min-width: 720px) and (max-width: 1040px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(3, 1fr); /* 1 card per row */
+
+  }
+}
 </style>
 <script>
     const wrapper = document.querySelector('.scroll-wrapper');
