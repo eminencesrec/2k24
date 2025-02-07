@@ -244,15 +244,14 @@
                     <a href="https://forms.gle/DK2tBAxgLQoUcPhNA"><button class="register-btn">Register</button></a>
                 </div>
 
-               
-              </div>
-              <div class="event-grid"> 
                 <div class="event-card">
-                  <img src="event-images/photos.gif" alt="Flashy Focus">
-                  <h3>Flashy Focus (Photography)</h3>
-                  <p>A spotlight on creativity through a lens of style.</p>
-                  <a href="https://forms.gle/xQjHmJuZvgPuMqT79"><button class="register-btn">Register</button></a>
-              </div>             
+                    <img src="event-images/photos.gif" alt="Flashy Focus">
+                    <h3>Flashy Focus (Photography)</h3>
+                    <p>A spotlight on creativity through a lens of style.</p>
+                    <a href="https://forms.gle/xQjHmJuZvgPuMqT79"><button class="register-btn">Register</button></a>
+                </div>
+              </div>
+              <div class="event-grid">              
                 <div class="event-card">
                     <img src="event-images/drawing.gif" alt="Trails of Secrets">
                     <h3>Inno Stitches (Drawing Competition)</h3>
@@ -266,22 +265,19 @@
                     <p>Cook and create culinary masterpieces.</p>
                     <a href="https://forms.gle/XskJu7QJ7MD6NfuT8"><button class="register-btn">Register</button></a>
                 </div>
-              
+                <div class="event-card">
+                    <img src="event-images/henna.gif" alt="Henna Hands Challenge">
+                    <h3>Mehandi Competition (Henna Happening)</h3>
+                    <p>Art in every stroke, beauty in every design.</p>
+                    <a href="https://forms.gle/tWV73U894vw2PxQC8"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card">
+                    <img src="event-images/fashion.gif" alt="Rampage Fashion Show">
+                    <h3>Rampage Fashion Show </h3>
+                    <p>Strut your stuff and let fashion take center stage.</p>
+                    <a href="https://forms.gle/RSMaFpUjDQ7JtMQQ7"><button class="register-btn">Register</button></a>
+                </div>
             </div>
-            <div class="event-grid"> 
-    
-            <div class="event-card">
-              <img src="event-images/henna.gif" alt="Henna Hands Challenge">
-              <h3>Mehandi Competition (Henna Happening)</h3>
-              <p>Art in every stroke, beauty in every design.</p>
-              <a href="https://forms.gle/tWV73U894vw2PxQC8"><button class="register-btn">Register</button></a>
-          </div>
-          <div class="event-card">
-              <img src="event-images/fashion.gif" alt="Rampage Fashion Show">
-              <h3>Rampage Fashion Show </h3>
-              <p>Strut your stuff and let fashion take center stage.</p>
-              <a href="https://forms.gle/RSMaFpUjDQ7JtMQQ7"><button class="register-btn">Register</button></a>
-          </div>
         </div>
     </div>
 
@@ -312,116 +308,109 @@
   </body>
 <style>
   /* Event Card Styling */
-@media (max-width: 400px) {
-.event-card {
-max-width: 250px; /* Shrinks slightly for very small devices */
-}
-}
-   @media (max-width: 320px) {
-.event-card {
-width: 250px; /* Slightly smaller to fit better */
-}
-}
-.event-card {
-   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-   border-radius: 15px;
-   overflow: hidden;
-   text-align: center;
-   position: relative;
-   width: 350px;
-   height: 380px; /* Reduced height for less spacing */
-   margin: 5px;
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-
-/* Image Styling */
-.event-card img {
-   width: 100%;
-   height: 180px; /* Slightly reduced fixed height */
-   object-fit: cover;
-   border-radius: 10px;
-   transition: transform 0.3s ease;
-}
-
-.event-card:hover img {
-   transform: scale(1.05);
-}
-
-/* Heading Styling */
-.event-card h3 {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 24px;
-   color: #ffcc00;
-   text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.7);
-}
-
-/* Paragraph Styling */
-.event-card p {
-   font-size: 14px;
-   color: #fff;
-   font-family: 'Arial', sans-serif;
-}
-
-/* Button Styling */
-.register-btn {
-   background: linear-gradient(45deg, #ff4500, #ffcc33);
-   color: white;
-   font-size: 16px;
-   border: none;
-   padding: 8px 15px;
-   border-radius: 25px;
-   cursor: pointer;
-   transition: background 0.3s ease, transform 0.3s ease;
-   font-family: 'Arial', sans-serif;
-   width: 90%;
-   text-align: center;
-   margin-top: auto; /* Ensures it sticks at the bottom */
-}
-
-.register-btn:hover {
-   background: linear-gradient(45deg, #ffcc33, #ff4500);
-   transform: scale(1.05);
-}
-
-.register-btn:active {
-   transform: scale(1);
-}
-.event-card:hover {
-   background: linear-gradient(135deg,rgb(97, 41, 4),rgb(67, 54, 14)); /* Smooth gradient */
-   transform: scale(1.05); /* Slight zoom-in */
-   box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Stronger glow effect */
-}
-
+ 
+  
+  .event-card {
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      width: 300px;
+      height: 380px; /* Reduced height for less spacing */
+      margin: 5px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  /* Image Styling */
+  .event-card img {
+      width: 100%;
+      height: 180px; /* Slightly reduced fixed height */
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover img {
+      transform: scale(1.05);
+  }
+  
+  /* Heading Styling */
+  .event-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.7);
+  }
+  
+  /* Paragraph Styling */
+  .event-card p {
+      font-size: 14px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  /* Button Styling */
+  .register-btn {
+      background: linear-gradient(45deg, #ff4500, #ffcc33);
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-family: 'Arial', sans-serif;
+      width: 90%;
+      text-align: center;
+      margin-top: auto; /* Ensures it sticks at the bottom */
+  }
+  
+  .register-btn:hover {
+      background: linear-gradient(45deg, #ffcc33, #ff4500);
+      transform: scale(1.05);
+  }
+  
+  .register-btn:active {
+      transform: scale(1);
+  }
+  .event-card:hover {
+      background: linear-gradient(135deg,rgb(97, 41, 4),rgb(67, 54, 14)); /* Smooth gradient */
+      transform: scale(1.05); /* Slight zoom-in */
+      box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Stronger glow effect */
+  }
 
 .event-card {
-flex: 1 1 400px; /* Equal width for all cards */
-max-width: 350px; /* Prevent cards from getting too large */
-text-align: center;
+    flex: 1 1 400px; /* Equal width for all cards */
+    max-width: 350px; /* Prevent cards from getting too large */
+    text-align: center;
 }
 
 @media (max-width: 400px) {
-.event-card {
-max-width: 270px; /* Shrinks slightly for very small devices */
+  .event-card {
+    max-width: 270px; /* Shrinks slightly for very small devices */
+  }
 }
-}
-   @media (min-width: 320px) and (max-width: 720px) {
-.event-card {
-width: 270px; /* Slightly smaller to fit better */
-grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        @media (min-width: 320px) and (max-width: 720px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
 
+  }
 }
-}
-@media (min-width: 720px) and (max-width: 1040px) {
-.event-card {
-width: 270px; /* Slightly smaller to fit better */
-grid-template-columns: repeat(3, 1fr); /* 1 card per row */
+@media (min-width: 721px) and (max-width: 1040px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(2, 1fr); /* 1 card per row */
 
+  }
 }
-}
+
 </style>
 <script>
     const wrapper = document.querySelector('.scroll-wrapper');
