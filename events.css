@@ -83,3 +83,94 @@ nav a:hover {
 nav a:hover {
     transform: scale(1.1);
 }
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 30px 15px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .event-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .event-card {
+        padding: 15px;
+    }
+    
+    .event-card img {
+        height: 130px;
+    }
+}
+
+/* Mobile Styles (for screens below 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 20px 10px;
+    }
+    
+    .section {
+        padding: 10px;
+    }
+    
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-card {
+        padding: 10px;
+    }
+    
+    .event-card img {
+        height: 120px;
+    }
+    
+    .register-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
+    nav a:hover {
+        transform: none;
+    }
+}
+/* Default styles for larger screens (Desktop First Approach) */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* For medium screens (max-width: 1200px) - 3 columns */
+@media screen and (max-width: 1200px) {
+    .event-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* For tablets (max-width: 900px) - 2 columns */
+@media screen and (max-width: 900px) {
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile devices (max-width: 600px) - 1 column */
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
