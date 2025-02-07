@@ -387,28 +387,6 @@
       transform: scale(1.05); /* Slight zoom-in */
       box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Stronger glow effect */
   }
-  .events-container {
-    display: flex;
-    justify-content: center; /* Center align horizontally */
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust spacing between cards */
-}
-
-.event-card {
-    flex: 1 1 400px; /* Equal width for all cards */
-    max-width: 350px; /* Prevent cards from getting too large */
-    text-align: center;
-}
-    @media (max-width: 400px) {
-    .event-card {
-      max-width: 270px; /* Shrinks slightly for very small devices */
-    }
-  }
-          @media (max-width: 320px) {
-    .event-card {
-      width: 270px; /* Slightly smaller to fit better */
-    }
-  }
 
 .event-card {
     flex: 1 1 400px; /* Equal width for all cards */
@@ -428,7 +406,12 @@
 
   }
 }
+@media (min-width: 721px) and (max-width: 1040px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(2, 1fr); /* 1 card per row */
 
+  }
 </style>
 <script>
     const wrapper = document.querySelector('.scroll-wrapper');
