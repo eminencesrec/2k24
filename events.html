@@ -296,13 +296,17 @@
 </body>
 <style>
     /* Event Card Styling */
+    @media (max-width: 400px) {
+  .event-card {
+    max-width: 90%; /* Shrinks slightly for very small devices */
+  }
     .event-card {
         background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
         border-radius: 15px;
         overflow: hidden;
         text-align: center;
         position: relative;
-        width: 300px;
+        width: 350px;
         height: 380px; /* Reduced height for less spacing */
         margin: 5px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
