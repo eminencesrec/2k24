@@ -298,8 +298,14 @@
     /* Event Card Styling */
     @media (max-width: 400px) {
   .event-card {
-    max-width: 90%; /* Shrinks slightly for very small devices */
+    max-width: 250px; /* Shrinks slightly for very small devices */
   }
+        @media (max-width: 320px) {
+  .event-card {
+    width: 250px; /* Slightly smaller to fit better */
+  }
+}
+
     .event-card {
         background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
         border-radius: 15px;
